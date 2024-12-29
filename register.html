@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- link untuk css -->
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/login&register.css">
+
+    <!-- link untuk javascript -->
+    <Script src="script/scriptLogin&register.js"></Script>
+
+</head>
+
+<body>
+    <!--==========================================
+    tampilan Login
+    ============================================ -->
+    <div class="wrapper">
+        <div class="sub-wrapper">
+            <div class="back"  onclick="goBack()"><i class="fa-solid fa-arrow-left"></i></div>
+            <div class="container register">
+               
+                <form onsubmit="checkregister(event)" class="form register">
+                    <h3 class="title register">Daftar</h3>
+                    <div class="register-column">
+                        <label for="register-nama">Nama Lengkap</label>
+                        <br>
+                        <input type="text" name="Nama Lengkap" class="box-input"
+                            placeholder="Nama Lengkap" id="register-nama" autofocus required>
+
+                    </div>
+                    <div class="register-column">
+                        <label for="register">Email</label>
+                        <br>
+                        <input type="email" name="email" class="box-input"
+                            placeholder="Email" id="register-email" autofocus required>
+
+                    </div>
+                    <div class="register-column">
+                        <label for="registerp-phone">No Hp</label>
+                        <br>
+                        <input type="number" name="phone" class="box-input" 
+                            placeholder="No Hp" id="registerp-phone" autofocus required>
+
+                    </div>
+                    <div class="register-column password">
+                        <label for="register-password">Password</label>
+                        <br>
+                        <input type="password" name="password" class="box-input" placeholder="Password"
+                            id="register_password" required>
+                        <i class="fa-regular fa-eye" onclick="togglePasswordRegister1()" id="seeRegister"></i>
+                    </div>
+                    <div class="register-column password">
+                        <label for="verify_password">Confirm Password</label>
+                        <br>
+                        <input type="password" name="password" class="box-input" placeholder="Confirm Password"
+                            id="verify_password" required>
+                        <i class="fa-regular fa-eye" onclick="togglePasswordRegister2()" id="seeverify"></i>
+                    </div>
+                    
+                   <button type="submit" class="btn masuk">DAFTAR</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- ==========================================
+        tampilan Login
+        ============================================-->
+
+</body>
+
+</html>

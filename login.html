@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- link untuk css -->
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/login&register.css">
+
+    <!-- link untuk javascript -->
+    <Script src="script/scriptLogin&register.js"></Script>
+
+</head>
+
+<body>
+    <!--==========================================
+    tampilan Login
+    ============================================ -->
+    <div class="wrapper">
+        <div class="sub-wrapper">
+            <div class="back"  onclick="goBack()"><i class="fa-solid fa-arrow-left"></i></div>
+            <div class="container login">
+               
+                <form onsubmit="checkLogin(event)" method="POST" class="form login">
+                    <h3 class="title login">Login</h3>
+                    <div class="login-column">
+                        <label for="login-email">Email</label>
+                        <br>
+                        <input type="email" name="email" class="box-input"
+                            placeholder="Email (Masukan 'user123@gmail.com')" id="login-email" autofocus required>
+
+                    </div>
+                    <div class="login-column password">
+                        <label for="login_password">Password</label>
+                        <br>
+                        <input type="password" name="password" class="box-input" placeholder="Password (Masukan 'password123')"
+                            id="login_password" required>
+                        <i class="fa-regular fa-eye" onclick="togglePassword()" id="see"></i>
+                    </div>
+                    <p>lupas password? <a href="">disini</a></p>
+                    <button type="submit" class="btn masuk">LOGIN</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- ==========================================
+        tampilan Login
+        ============================================-->
+
+</body>
+
+</html>

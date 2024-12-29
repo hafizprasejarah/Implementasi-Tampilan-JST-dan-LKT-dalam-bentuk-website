@@ -1,0 +1,125 @@
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --selection: #5a95e375;
+    --hitam-legam: #000000;
+    --latar-belakang: #D9D9D9;
+    --hitam: #444;
+    --ungu: #A0B5FF;
+    --hijau-status: #2FBD68;
+    --merah-delete: #EA0016;
+    --kuning-validasi: #FFB23C;
+    --putih: #fff;
+    --biru-btn: #3563E9;
+    --biru-teks: #0022d6;
+    --opsi-biru-btn: #62c2f6;
+    --putih-bg: #f6f7f9;
+    --scroll: rgba(255, 255, 255, 0.808);
+    --kuning: #F4D160;
+    --orange: #f39c12;
+    --border: .1rem solid rgba(0, 0, 0, 0.432);
+    --bold-border: .2rem solid rgba(0, 0, 0, 0.432);
+    --box-shadow: 0 .5rem 1rem rgb(0, 0, 0, .1);
+    --border--putih: .1rem solid rgba(255, 255, 255, 0.432);
+
+}
+
+* {
+    font-family: "JetBrains Mono", serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .2s linear;
+}
+
+html {
+    font-size: 62%;
+    overflow-x: hidden;
+    scroll-padding-top: 5rem;
+    scroll-behavior: smooth;
+}
+
+
+/* slide-image */
+.slide {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100%;
+    /* background-color: black; */
+}
+
+.wrapper-carousel {
+
+    max-width: 1200px;
+    position: relative;
+}
+
+.wrapper-carousel i {
+
+    background-color: var(--hitam);
+    color: var(--putih);
+    height: 46px;
+    width: 46px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    text-align: center;
+    line-height: 46px;
+    font-size: 1.2rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.wrapper-carousel i:first-child {
+    left: -23px;
+    display: none;
+}
+
+.wrapper-carousel i:last-child {
+    right: -23px;
+
+}
+    
+.wrapper-carousel .carousel {
+    font-size: 0px;
+    overflow: hidden;
+    cursor: pointer;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+}
+
+.carousel.dragging {
+    cursor: grab;
+    scroll-behavior: auto;
+
+}
+
+.carousel.dragging img {
+    pointer-events: none;
+}
+
+.carousel a,
+.carousel2 a,
+.carousel3 a {
+    margin-left: 14px;
+
+
+}
+
+.carousel img {
+    box-shadow: var(--box-shadow-orange);
+    border: var(--border-hover);
+    height: 240px;
+    object-fit:cover;
+
+    width: calc(100%);
+    border-radius: .5rem;
+}
+
+.carousel a:first-child {
+    margin-left: 0px;
+}

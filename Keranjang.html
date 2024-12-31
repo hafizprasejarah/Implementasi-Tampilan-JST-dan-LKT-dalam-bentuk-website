@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,11 +10,14 @@
 
     <!-- link untuk css -->
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/keranjang.css">
 
 
     <!-- link untuk javascript -->
     <Script src="script/daftarproduk.js" defer></Script>
+    <Script src="script/keranjang.js" defer></Script>
 </head>
+
 <body>
     <div class="header">
         <div class="header-title loged">
@@ -31,21 +35,27 @@
                     <li>
                         <div class="search-menu-produk">
                             <i class="fa-solid fa-magnifying-glass"></i>
-                            <a href="daftarproduk.html"><p>Tembaga...</p></a>
+                            <a href="daftarproduk.html">
+                                <p>Tembaga...</p>
+                            </a>
                             <div id="hapus-search-ikon" class="fa-solid fa-x"></div>
                         </div>
                     </li>
                     <li>
                         <div class="search-menu-produk">
                             <i class="fa-solid fa-magnifying-glass"></i>
-                            <a href="daftarproduk.html"><p>Besi...</p></a>
+                            <a href="daftarproduk.html">
+                                <p>Besi...</p>
+                            </a>
                             <div id="hapus-search-ikon" class="fa-solid fa-x"></div>
                         </div>
                     </li>
                     <li>
                         <div class="search-menu-produk">
                             <i class="fa-solid fa-magnifying-glass"></i>
-                            <a href="daftarproduk.html"><p>Timah...</p></a>
+                            <a href="daftarproduk.html">
+                                <p>Timah...</p>
+                            </a>
                             <div id="hapus-search-ikon" class="fa-solid fa-x"></div>
                         </div>
                     </li>
@@ -54,12 +64,77 @@
         </form>
 
         <div class="keranjang">
-           <a href="Keranjang.html"><i class="fa-solid fa-cart-shopping"></i></a> 
+            <a href="Keranjang.html"><i class="fa-solid fa-cart-shopping"></i></a>
         </div>
         <div class="profile">
             <a href="profile.html"><i class="fa-solid fa-user"></i></a>
         </div>
-
     </div>
+
+    <div class="wrapper keranjang">
+        <div class="sub-wrapper">
+            <div class="container-keranjang">
+                <div class="back" onclick="goBack()"><i class="fa-solid fa-arrow-left"></i></div>
+                <div class="daftar-keranjang">
+                    <div class="judul">
+                        <h3>Keranjang</h3>
+                        <h3>Detail Pesanan</h3>
+                    </div>
+                    <div class="pilih-semua">
+                        <form action="">
+                            <input type="checkbox" name="hapus-semua">
+                            <label for="hapus-semua">
+                                <h3>Pilih Semua</h3>
+                            </label>
+                        </form>
+                        <button>Hapus</button>
+
+                    </div>
+
+                    <div class="detail-keranjang-produk ">
+                        <form action="">
+                            <div>
+                                <input type="checkbox" name="nama-penjual">
+                                <label for="nama-penjual">Satriya Nova</label>
+                            </div>
+                        </form>
+                        <div class="gambar-container">
+                            <div class="wrapper-gambar"><img src="asset/Tembaga.jpg" alt=""></div>
+                            <p class="namaproduk">Tembaga 1kg.....</p>
+                            <p class="harga-produk">Rp 50.000</p>
+                        </div>
+                        <div class="jumlah-produk">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-solid fa-trash"></i>
+                            <div class="counter-container">
+                                <button class="btncounter" id="decrementBtn" onclick="decrement()">-</button>
+                                <span id="countDisplay" class="count-display">0</span>
+                                <button class="btncounter" id="incrementBtn" onclick="increment()">+</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="judul kedua">
+                        <h3>Total Harga</h3>
+                    </div>
+
+                    <div class="detail-keranjang-produk ">
+                        <div>
+                            <h3>Rinkasan Belanja</h3>
+                        </div>
+                        <div class="gambar-container">
+                            <p class="namaproduk">Total</p>
+                            <p class="harga-produk">Rp 50.000</p>
+                        </div>
+
+                        <button class="btn masuk">Bayar</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
 </body>
+
 </html>

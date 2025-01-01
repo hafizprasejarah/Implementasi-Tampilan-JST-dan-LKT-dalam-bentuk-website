@@ -1,0 +1,291 @@
+:root {
+    --selection: #5a95e375;
+    --hitam-legam: #000000;
+    --latar-belakang: #D9D9D9;
+    --hitam: #444;
+    --ungu: #A0B5FF;
+    --hijau-status: #2FBD68;
+    --merah-delete: #EA0016;
+    --kuning-validasi: #FFB23C;
+    --putih: #fff;
+    --biru-btn: #3563E9;
+    --biru-teks: #0022d6;
+    --opsi-biru-btn: #62c2f6;
+    --putih-bg: #f6f7f9;
+    --scroll: rgba(255, 255, 255, 0.808);
+    --kuning: #F4D160;
+    --orange: #f39c12;
+    --border: .1rem solid rgba(0, 0, 0, 0.432);
+    --bold-border: .2rem solid rgba(0, 0, 0, 0.432);
+    --box-shadow: 0 .5rem 1rem rgb(0, 0, 0, .1);
+    --border--putih: .1rem solid rgba(255, 255, 255, 0.432);
+
+}
+
+body {
+
+    background-color: #f6f7f9;
+}
+
+.wrapper.profil {
+    display: flex;
+    padding: 13% 2rem 0 2rem;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    background: var(--putih-bg);
+}
+
+.sub-wrapper-profile {
+
+    position: relative;
+    justify-content: center;
+    display: flex;
+    align-content: center;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.back i {
+    position: absolute;
+    left: 0;
+    color: #000;
+    z-index: 999;
+    font-size: 2.8rem;
+}
+
+.all-profile-container {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar-profile {
+    background-color: var(--latar-belakang);
+    /* background: #000000aa; */
+
+}
+
+.all-profile-container .navbar-list {
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+}
+
+.all-profile-container ul .list {
+    list-style: none;
+    padding: .5rem 2rem;
+    cursor: pointer;
+    font-size: 1.4rem;
+    font-weight: bold;
+    /* align-items: center; */
+}
+
+.all-profile-container ul .list:hover {
+    background-color: var(--kuning);
+}
+
+.all-profile-container ul .list.active {
+    background-color: var(--kuning);
+}
+
+.tampilan-profile {
+    margin-top: 1rem;
+    background-color: var(--latar-belakang);
+    width: 100%;
+}
+
+.container{
+    display: none;
+}
+
+
+.container.pertama {
+    /* display: none; */
+    position: relative;
+}
+
+.container.active {
+    display: flex;
+}
+
+.container.pertama .gambar-profile {
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container.pertama .gambar-profile .container-gambar {
+    width: 300px;
+    padding: 1rem;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 15px;
+    position: relative;
+    object-position: top left;
+    border-radius: 50%;
+}
+
+.container.pertama .gambar-profile .container-gambar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+}
+
+.inputgambar {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+
+.file-label {
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--hitam-legam);
+    color: var(--putih);
+    border-radius: 5px;
+    cursor: pointer;
+    width: 80%;
+    transition: background-color 0.3s ease;
+}
+
+.file-label:hover {
+    background-color: var(--putih);
+    color: var(--hitam-legam);
+}
+
+.btn.masuk.logout {
+    position: absolute;
+    right: 0;
+    margin: 1rem;
+    bottom: 0;
+}
+
+.container.pertama .biodata {
+    width: 330px;
+    padding: 4rem 2rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.container.pertama .biodata p {
+    overflow-x: hidden;
+    font-size: 1.4rem;
+    font-weight: bold;
+    width: 100%;
+    padding: 1rem 0rem;
+}
+
+.container.kedua{
+    font-size: 1.4rem;
+    font-weight: bold;
+    height: 366px;
+    flex-direction: column;
+    padding: 1rem 2rem;
+    overflow-y: scroll;
+}
+
+.container.kedua h3{
+    font-size: 1.6rem;
+
+}
+
+.container.kedua .pembayaran{
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: var(--bold-border);
+}
+
+.container.kedua .pembayaran:hover{
+    background-color: #9a9a9a;
+}
+.container.ketiga {
+    background-color: var(--putih-bg);
+    font-size: 1.4rem;
+    font-weight: bold;
+    flex-direction: column;
+    position: relative;
+}
+
+.container.ketiga .nama-bank{
+    background-color: var(--latar-belakang);
+    font-size: 1.6rem;
+    padding: 1rem 2rem;
+}
+
+.container.ketiga .tentang-nasabah{
+    background-color: var(--latar-belakang);
+    padding: 1rem 2rem;
+
+
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.container.ketiga .tentang-nasabah .container-gambar2{
+    width: 60px;
+    background-color: var(--kuning-validasi);
+    height: 60px;
+}
+
+
+.container.ketiga .tentang-nasabah .btn.masuk.rekening.utama{
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 1rem 0 1rem 0;
+    background-color: var(--hitam-legam);
+    color: var(--putih);
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.container.ketiga .tentang-nasabah .container-gambar2 img{
+    width: 100%;
+}
+
+
+.container.ketiga .catatan{
+    align-self: center;
+    border-radius: 20px;
+    background: var(--latar-belakang);
+    margin: 1rem 2rem;
+    padding: 1rem 2rem;
+    width: 50%;
+    height: 100px;
+}
+
+.container.ketiga .container-button {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding-bottom: 1rem;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container.ketiga .container-button .btn.masuk.rekening{
+    max-width: 630px;
+    width: 100%;
+    /* min-width: 630px; */
+}

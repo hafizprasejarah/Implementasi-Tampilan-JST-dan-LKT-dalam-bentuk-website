@@ -11,12 +11,12 @@
 
     <!-- link untuk css -->
     <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="style/keranjang.css">
+    <link rel="stylesheet" href="style/profil.css">
 
 
     <!-- link untuk javascript -->
     <Script src="script/daftarproduk.js" defer></Script>
-    <Script src="script/keranjang.js" defer></Script>
+    <Script src="script/profile.js" defer></Script>
 </head>
 
 <body>
@@ -73,6 +73,147 @@
         </div>
     </div>
 
+    <div class="wrapper profil">
+        <div class="sub-wrapper-profile">
+            <div class="back" onclick="goBack()"><i class="fa-solid fa-arrow-left"></i></div>
+            <div class="all-profile-container">
+                <div class="navbar-profile">
+                    <nav>
+                        <ul class="navbar-list">
+                            <li class="list i">Biodata diri</li>
+                            <li class="list ii">Pembayaran</li>
+                            <li class="list iii">Rekening Bank</li>
+                            <li class="list iv">Pengaturan</li>
+                            <li class="list v">Keamanan</li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="tampilan-profile">
+                    <div class="container pertama active">
+                        <div class="gambar-profile">
+                            <div class="container-gambar">
+                                <img src="asset/profil.jpeg">
+                            </div>
+                            <input class="inputgambar" type="file" id="foto-profile">
+                            <label class="file-label" for="foto-profile">Pilih Gambar</label>
+
+                        </div>
+                        <div class="biodata">
+                            <h3>Biodata Diri</h3>
+                            <p>Nama: Satriya Nanda Nova</p>
+                            <p>Tanggal lahir: 1 Februari 1998</p>
+                            <p>Jenis Kelamin: Rahasia</p>
+                            <p>Alamat: jln Gringsing No 30, gamviran Cemana, Grogol, Sukoharjo, Jawa Tengah</p>
+                            <p>Email: user123@gmail.com </p>
+                            <p>No HP: 08833131313</p>
+                        </div>
+                        <button class="btn masuk logout" onclick="logout()"> Logout</button>
+                    </div>
+
+                    <div class="container kedua">
+                        <h3>Atur Pembayaran</h3>
+                        <div class="pembayaran" onclick="error()">
+                            <p>Gopay</p>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                        <div class="pembayaran" onclick="error()">
+                            <p>Dana</p>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                        <div class="pembayaran" onclick="error()">
+                            <p>Saldo</p>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                        <div class="pembayaran" onclick="error()">
+                            <p>kartu Kredit</p>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                        <div class="pembayaran" onclick="error()">
+                            <p>Dana</p>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+
+
+
+                    </div>
+
+                    <div class="container ketiga">
+                        <div class="nama-bank">
+                            <h3>BRNRI</h3>
+                        </div>
+                        <div class="tentang-nasabah">
+                            <div>
+                                <p>12345678910</p>
+                                <p>Nova Nanda Satria</p>
+                                <button class="btn masuk rekening utama">Rekening Utama</button>
+                            </div>
+                            <div class="container-gambar2">
+                                <img src="asset/Bank.png" alt="">
+                            </div>
+                        </div>
+                        <div class="container-button">
+                            <button class="btn masuk rekening">Tambah Rekening</button>
+
+                        </div>
+
+                    </div>
+
+                    <div class="container keempat">
+                        <h3>Atur Pembayaran</h3>
+                        <div class="pembayaran" onclick="error()">
+                            <p>Gopay</p>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                        <div class="pembayaran" onclick="error()">
+                            <p>Dana</p>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                        <div class="pembayaran" onclick="error()">
+                            <p>Saldo</p>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                        <div class="pembayaran" onclick="error()">
+                            <p>kartu Kredit</p>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                        <div class="pembayaran" onclick="error()">
+                            <p>Dana</p>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                    </div>
+
+
+                    <div class="container kelima">
+                        Keamanan
+                        <h3>Atur Pembayaran</h3>
+                        <div class="pembayaran" onclick="error()">
+                            <p>Gopay</p>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                        <div class="pembayaran" onclick="error()">
+                            <p>Dana</p>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                        <div class="pembayaran" onclick="error()">
+                            <p>Saldo</p>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                        <div class="pembayaran" onclick="error()">
+                            <p>kartu Kredit</p>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                        <div class="pembayaran" onclick="error()">
+                            <p>Dana</p>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

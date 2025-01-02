@@ -55,6 +55,10 @@ body {
     font-size: 2.8rem;
 }
 
+.back:hover i {
+    color: #D9D9D9;
+
+}
 .all-profile-container {
     width: fit-content;
     display: flex;
@@ -97,7 +101,7 @@ body {
     width: 100%;
 }
 
-.container{
+.container {
     display: none;
 }
 
@@ -187,7 +191,7 @@ body {
     padding: 1rem 0rem;
 }
 
-.container.kedua{
+.container.kedua {
     font-size: 1.4rem;
     font-weight: bold;
     height: 366px;
@@ -196,21 +200,22 @@ body {
     overflow-y: scroll;
 }
 
-.container.kedua h3{
+.container.kedua h3 {
     font-size: 1.6rem;
 
 }
 
-.container.kedua .pembayaran{
+.container.kedua .pembayaran {
     padding: 2rem 0;
     display: flex;
     justify-content: space-between;
     border-bottom: var(--bold-border);
 }
 
-.container.kedua .pembayaran:hover{
+.container.kedua .pembayaran:hover {
     background-color: #9a9a9a;
 }
+
 .container.ketiga {
     background-color: var(--putih-bg);
     font-size: 1.4rem;
@@ -219,13 +224,13 @@ body {
     position: relative;
 }
 
-.container.ketiga .nama-bank{
+.container.ketiga .nama-bank {
     background-color: var(--latar-belakang);
     font-size: 1.6rem;
     padding: 1rem 2rem;
 }
 
-.container.ketiga .tentang-nasabah{
+.container.ketiga .tentang-nasabah {
     background-color: var(--latar-belakang);
     padding: 1rem 2rem;
 
@@ -235,14 +240,14 @@ body {
     justify-content: space-between;
 }
 
-.container.ketiga .tentang-nasabah .container-gambar2{
+.container.ketiga .tentang-nasabah .container-gambar2 {
     width: 60px;
     background-color: var(--kuning-validasi);
     height: 60px;
 }
 
 
-.container.ketiga .tentang-nasabah .btn.masuk.rekening.utama{
+.container.ketiga .tentang-nasabah .btn.masuk.rekening.utama {
     font-size: 1.4rem;
     font-weight: bold;
     text-align: center;
@@ -256,12 +261,12 @@ body {
     width: 100%;
 }
 
-.container.ketiga .tentang-nasabah .container-gambar2 img{
+.container.ketiga .tentang-nasabah .container-gambar2 img {
     width: 100%;
 }
 
 
-.container.ketiga .catatan{
+.container.ketiga .catatan {
     align-self: center;
     border-radius: 20px;
     background: var(--latar-belakang);
@@ -284,8 +289,73 @@ body {
     align-items: center;
     justify-content: center;
 }
-.container.ketiga .container-button .btn.masuk.rekening{
+
+.container.ketiga .container-button .btn.masuk.rekening {
     max-width: 630px;
     width: 100%;
     /* min-width: 630px; */
+}
+
+
+.container.keempat {
+    font-size: 1.4rem;
+    font-weight: bold;
+    height: 366px;
+    flex-direction: column;
+    padding: 1rem 2rem;
+    overflow-y: scroll;
+}
+
+.container.keempat h3 {
+    font-size: 1.6rem;
+
+}
+
+.container.keempat .pengaturan {
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: var(--bold-border);
+}
+
+.container.keempat .pengaturan .judul-pengaturan {
+    display: flex;
+    flex-direction: column;
+}
+
+.container.keempat .pengaturan .judul-pengaturan .sub-judul {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-top: 1rem;
+}
+
+.container.keempat .pengaturan:hover {
+    background-color: #9a9a9a;
+}
+
+
+.container.kelima {
+    font-size: 1.4rem;
+    font-weight: bold;
+    height: 366px;
+    flex-direction: column;
+    padding: 1rem 2rem;
+    overflow-y: scroll;
+}
+
+.container.kelima h3 {
+    font-size: 1.6rem;
+
+}
+
+.container.kelima .keamanan {
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: var(--bold-border);
+}
+
+.container.kelima .keamanan:hover {
+    background-color: #9a9a9a;
 }

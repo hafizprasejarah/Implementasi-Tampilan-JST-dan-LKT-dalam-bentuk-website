@@ -138,3 +138,11 @@ if (menu) {
 
 
 }
+
+function daftarproduk(){
+    window.location.href = "daftarproduk.html";
+}
+
+function detail(){
+    window.location.href = "detailproduk.html";
+}

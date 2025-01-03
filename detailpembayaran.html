@@ -3,7 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detail Pembayran</title>
+    <title>Detail Pembayaran</title>
+
+    
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- link untuk css -->
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/pembelian.css">
+
+    <!-- link untuk javascript -->
+    <Script src="script/detailproduk.js" defer></Script>
 </head>
 <body>
     <div class="wrapper pembelian">
@@ -12,8 +23,8 @@
                 <div class="back" onclick="goBack()"><i class="fa-solid fa-arrow-left"></i></div>
                 <div class="daftar-pembelian">
                     <div class="judul">
-                        <h3>Alamat Rumah Pengiriman</h3>
-                        <p>Alamaat Rumah , jl 123, desa, kelurahan,  kecamatan,  Kabupaten</p>
+                        <h3>Pesanan Selesai</h3>
+                        <p>Tanggal pembelian 04 Januari 2024, 16:42 WIB</p>
                     </div>
     
     
@@ -23,21 +34,19 @@
                             <div class="wrapper-gambar"><img src="asset/Tembaga.jpg" alt=""></div>
                             <div class="nama-harga">
                                 <h3 class="namaproduk">Tembaga 1kg.....</h3>
-                                <p class="harga-produk">Rp 50.000</p>
+                                <p class="harga-produk">1 X Rp 106.000</p>
                             </div>
     
                             <div class="metode-pembayaran">
                                 <h3 class="namaprodukk">Metode Pembayaran</h3>
                                 <p class="harga-produk">COD</p>
-                                <p class="harga-produk">Dana</p>
-                                <p class="harga-produk">kartu Kredit</p>
                             </div>
                         </div>
      
                     </div>
     
                     <div class="judul kedua">
-                        <h3>Ringkasan Transaksi</h3>
+                        <h3>Rincian Pembayaran</h3>
                     </div>
     
                     <div class="detail-pembelian-produk ">
@@ -47,7 +56,7 @@
                         </div>
                         <div class="gambar-container ringkasan">
                             <p class="namaproduk transaksi">Ongkos Kirim</p>
-                            <p class="harga-produk">Rp 15.000</p>
+                            <p class="harga-produk"><s>Rp 15.000 </s></p>
                         </div>
                         <div class="gambar-container ringkasan">
                             <p class="namaproduk transaksi">Pajak PPN</p>
@@ -59,7 +68,7 @@
                             <p class="harga-produk">106.400</p>
                         </div>
     
-                        <button class="btn masuk" onclick="error()">Bayar</button>
+                        <button class="btn masuk" onclick="error()">Beri Ulasan</button>
     
                     </div>
                 </div>

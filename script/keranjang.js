@@ -44,3 +44,8 @@ function detail(){
 function pembayaran(){
   window.location.href = "pembelian.html";
 }
+
+function detailpembayaran(){
+  window.location.href = "detailpembayaran.html";
+
+}

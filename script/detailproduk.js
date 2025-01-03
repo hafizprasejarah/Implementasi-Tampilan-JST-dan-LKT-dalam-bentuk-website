@@ -1,6 +1,6 @@
 function keranjang() {
     alert("berhasil menambahkan");
-    window.location.href = "keranjang.html";
+    // window.location.href = "keranjang.html";
 }
 function beli() {
     window.location.href = "pembelian.html";

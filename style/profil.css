@@ -59,6 +59,7 @@ body {
     color: #D9D9D9;
 
 }
+
 .all-profile-container {
     width: fit-content;
     display: flex;
@@ -67,15 +68,18 @@ body {
 }
 
 .navbar-profile {
+    width: 100%;
+
     background-color: var(--latar-belakang);
     /* background: #000000aa; */
 
 }
 
 .all-profile-container .navbar-list {
+
     display: flex;
     flex-direction: row;
-    /* align-items: center; */
+    align-items: center;
 }
 
 .all-profile-container ul .list {
@@ -120,6 +124,7 @@ body {
     position: relative;
     align-items: center;
     flex-direction: column;
+    width: 100%;
 }
 
 .container.pertama .gambar-profile .container-gambar {
@@ -358,4 +363,55 @@ body {
 
 .container.kelima .keamanan:hover {
     background-color: #9a9a9a;
+}
+
+
+
+@media(max-width:650px) {
+    html {
+        font-size: 50%;
+
+    }
+
+    .container.pertama.active {
+        flex-direction: column;
+    }
+
+    .all-profile-container {
+        width: 100%;
+    }
+
+    .all-profile-container .navbar-list {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .all-profile-container ul .list {
+
+        padding: .2rem .5rem;
+
+        font-size: .9rem;
+        font-weight: bold;
+        align-items: center;
+    }
+
+    .all-profile-container ul .list:hover {
+        background-color: var(--kuning);
+    }
+
+    .all-profile-container ul .list.active {
+        background-color: var(--kuning);
+    }
+
+    .container.pertama .biodata {
+        width: 100%;
+        padding: 4rem 2rem;
+        font-size: 1.6rem;
+        font-weight: bold;
+    }
+
+
 }

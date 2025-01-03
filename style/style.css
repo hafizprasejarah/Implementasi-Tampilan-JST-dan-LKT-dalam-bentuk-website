@@ -79,7 +79,7 @@ html {
 
 }
 
-.header-title.loged h3 a {
+.header-title.loged a {
     cursor: pointer;
     text-decoration: none;
     color: var(--hitam-legam);

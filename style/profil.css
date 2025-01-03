@@ -83,8 +83,10 @@ body {
 }
 
 .all-profile-container ul .list {
+    text-align: center;
+    width: 100%;
     list-style: none;
-    padding: .5rem 2rem;
+    padding: .5rem 1rem;
     cursor: pointer;
     font-size: 1.4rem;
     font-weight: bold;
@@ -406,12 +408,24 @@ body {
         background-color: var(--kuning);
     }
 
+    .container.pertama .gambar-profile .container-gambar{
+        width: 200px;
+        height: 200px;
+    }
+    .file-label{
+        padding: 5px 15px;
+    }
     .container.pertama .biodata {
         width: 100%;
         padding: 4rem 2rem;
-        font-size: 1.6rem;
+        font-size: 1.4rem;
         font-weight: bold;
     }
-
+    .container.pertama .biodata p{
+        font-size: 1.2rem;
+    }
+    .back i{
+        top: -7%;
+    }
 
 }

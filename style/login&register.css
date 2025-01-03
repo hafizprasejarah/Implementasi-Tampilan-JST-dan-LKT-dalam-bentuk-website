@@ -1,6 +1,6 @@
 body {
     background-color: #f6f7f9;
-    
+
 }
 
 .container.login,
@@ -23,7 +23,7 @@ body {
     font-size: 2.8rem;
 }
 
-.back:hover  i {
+.back:hover i {
     color: #D9D9D9;
 
 }
@@ -53,12 +53,13 @@ body {
 }
 
 .form.login .title.login,
-.form.register .title.register  {
+.form.register .title.register {
     font-size: 3.75rem;
     font-weight: bold;
 }
 
-.form.login .login-column, .form.register .register-column {
+.form.login .login-column,
+.form.register .register-column {
     padding: 1rem;
     position: relative;
 }
@@ -81,21 +82,23 @@ body {
     margin: 1rem 0;
 }
 
-.form.login p, .form.register p {
+.form.login p,
+.form.register p {
     font-size: 1.2rem;
     margin: 1rem 0;
     font-weight: bold;
 }
 
 
-.form.login .login-column.password i, .form.register .register-column.password i {
+.form.login .login-column.password i,
+.form.register .register-column.password i {
     font-size: 1.8rem;
     position: absolute;
     left: 92%;
     bottom: 40%;
 }
 
-#see  {
+#see {
     font-size: 1.8rem;
     position: absolute;
     left: 92%;
@@ -112,6 +115,7 @@ body {
     color: #D9D9D9;
     transform: scale(.95);
 }
+
 #seeRegister.active {
 
     color: #a19e9e;
@@ -122,6 +126,7 @@ body {
     color: #D9D9D9;
     transform: scale(.95);
 }
+
 #seeverify.active {
 
     color: #a19e9e;
@@ -131,4 +136,24 @@ body {
 #seeverify:hover {
     color: #D9D9D9;
     transform: scale(.95);
+}
+
+
+
+@media(max-width:450px) {
+    html {
+        font-size: 50%;
+
+    }
+
+    .form.register, .form.login{
+        padding:2rem 4rem;
+    }
+
+    .box-input {
+        min-width: 150px;
+    }
+
+
+
 }

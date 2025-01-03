@@ -203,6 +203,11 @@ body {
         margin-bottom:2rem ;
     }
 
+    .btn-group2  .btn, .btn-group2 .btn{
+        font-size: 1.4rem;
+        padding: .5rem 1rem;
+    }
+
     
 
 }

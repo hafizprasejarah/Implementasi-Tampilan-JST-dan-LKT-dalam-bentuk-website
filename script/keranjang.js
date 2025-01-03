@@ -35,3 +35,12 @@ function goBack() {
   // Navigasi ke halaman sebelumnya
   window.history.back();
 }
+
+
+function detail(){
+  window.location.href = "detailproduk.html";
+}
+
+function pembayaran(){
+  window.location.href = "pembelian.html";
+}

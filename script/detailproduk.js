@@ -8,7 +8,11 @@ function beli() {
 
 const menu = document.querySelector(".search-menu");
 
-
+function goBack() {
+    // Navigasi ke halaman sebelumnya
+    window.history.back();
+  }
+  
 
 if (menu) {
 
@@ -21,3 +25,7 @@ if (menu) {
 
 
 }
+
+function error(){
+    alert("Halaman Belum Tersedia");
+  }

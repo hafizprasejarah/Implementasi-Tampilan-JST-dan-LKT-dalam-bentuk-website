@@ -190,3 +190,23 @@ btncounter:hover:not(:disabled) {
 .detail-keranjang-produk .btn.masuk {
     margin: 4rem 0 1rem 0;
 }
+
+@media(max-width:650px) {
+    html {
+        font-size: 50%;
+
+    }
+    .daftar-keranjang {
+        padding: 5rem .5rem;
+    }
+    
+
+    .count-display{
+        font-size: 1.4rem;
+    }
+    .jumlah-produk i{
+        font-size: 2rem;
+    }
+    
+
+}

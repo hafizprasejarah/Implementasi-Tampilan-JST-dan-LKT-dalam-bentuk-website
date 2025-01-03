@@ -1,3 +1,11 @@
+function keranjang() {
+    window.location.href = "keranjang.html";
+    alert("berhasil menambahkan");
+}
+function beli() {
+    window.location.href = "pembelian.html";
+}
+
 const menu = document.querySelector(".search-menu");
 
 
@@ -12,8 +20,4 @@ if (menu) {
     }
 
 
-}
-
-function detail(){
-    window.location.href = "detailproduk.html";
 }

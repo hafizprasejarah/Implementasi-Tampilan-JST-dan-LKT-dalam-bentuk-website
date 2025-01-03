@@ -123,3 +123,14 @@ html {
 .carousel a:first-child {
     margin-left: 0px;
 }
+
+@media(max-width:991px) {
+    .wrapper-carousel i:first-child {
+        left: -20px;
+        display: none;
+    }
+    
+    .wrapper-carousel i:last-child {
+        right: -20px;
+    }
+}

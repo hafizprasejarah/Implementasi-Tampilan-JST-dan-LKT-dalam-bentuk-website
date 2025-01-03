@@ -19,9 +19,9 @@
 
 <body>
     <div class="header">
-        <div class="header-title loged">
+        <div class="header-title">
             <h3>
-                <a href="HalamanUtama.html">Rongsok Jaya</a>
+                Rongsok Jaya
             </h3>
         </div>
 
@@ -63,11 +63,16 @@
         </form>
 
         <div class="keranjang">
-            <a href="Keranjang.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="Keranjang.html">
+                <i class="fa-solid fa-cart-shopping"></i>
+
+            </a>
         </div>
+
         <div class="profile">
             <a href="profile.html"><i class="fa-solid fa-user"></i></a>
         </div>
+
 
     </div>
 
@@ -80,8 +85,8 @@
                     <div class="carousel">
                         <a href="detailproduk.html"><img src="asset/sample.jpg" alt="" draggable="false"></a>
                         <a href="detailproduk.html"><img src="asset/paper.jpg" alt="" draggable="false"></a>
-                        <a href="detailproduk.html"><img src="asset/sample.jpg" alt="" draggable="false"></a>
-                        <a href="detailproduk.html"><img src="asset/sample.jpg" alt="" draggable="false"></a>
+                        <a href="detailproduk.html"><img src="asset/pcb2.jpg" alt="" draggable="false"></a>
+                        <a href="detailproduk.html"><img src="asset/botolplastik.jpg" alt="" draggable="false"></a>
                     </div>
                     <i id="right" class="fa-solid fa-angle-right"></i>
                 </div>
@@ -96,42 +101,42 @@
             <div class="kategori">
                 <!-- menu 1 -->
                 <div class="menukategori">
-                    <p>Elektronik</p>
-                    <div class="gambarkategori"><img src="asset/phone.jpg" alt=""></div>
+                    <p>Logam</p>
+                    <div class="gambarkategori" onclick="daftarproduk()"><img src="asset/Besi.png" alt=""></div>
                     <div class="footer"></div>
                 </div>
 
                 <!-- menu 2 -->
                 <div class="menukategori">
-                    <p>Pendidikan</p>
-                    <div class="gambarkategori"><img src="asset/buku.jpg" alt=""></div>
+                    <p>Kertas</p>
+                    <div class="gambarkategori" onclick="daftarproduk()"><img src="asset/kardus.png" alt=""></div>
                     <div class="footer"></div>
                 </div>
                 <!-- menu 3 -->
                 <div class="menukategori">
-                    <p>Makanan</p>
-                    <div class="gambarkategori"><img src="asset/Makanan.png" alt=""></div>
+                    <p>Plastik</p>
+                    <div class="gambarkategori"  onclick="daftarproduk()"><img src="asset/Plastik.png" alt=""></div>
                     <div class="footer"></div>
                 </div>
 
                 <!-- menu 4 -->
                 <div class="menukategori">
-                    <p>Mainan</p>
-                    <div class="gambarkategori"><img src="asset/mainan.jpg" alt=""></div>
+                    <p>Botol Kaca</p>
+                    <div class="gambarkategori"  onclick="daftarproduk()"><img src="asset/Kaca.png" alt=""></div>
                     <div class="footer"></div>
                 </div>
 
                 <!-- menu 5 -->
                 <div class="menukategori">
-                    <p>Baju</p>
-                    <div class="gambarkategori"><img src="asset/baju.jpg" alt=""></div>
+                    <p>PCB</p>
+                    <div class="gambarkategori"  onclick="daftarproduk()"><img src="asset/pcb.png" alt=""></div>
                     <div class="footer"></div>
                 </div>
 
                 <!-- menu 6 -->
                 <div class="menukategori">
-                    <p>Sepatu</p>
-                    <div class="gambarkategori"><img src="asset/sepatu.png" alt=""></div>
+                    <p>Karung</p>
+                    <div class="gambarkategori" onclick="daftarproduk()"><img src="asset/Karung.png" alt=""></div>
                     <div class="footer"></div>
                 </div>
             </div>
@@ -144,37 +149,36 @@
             <p class="title">Produk</p>
             <div class="produk">
                 <!-- menu 1 -->
-                <div class="menuproduk">
-
-                    <img src="asset/phone.jpg" alt="">
-                    <p>Sepatu</p>
+                <div class="menuproduk" onclick="detail()">
+                    <div class="menuproduk-img-container"><img src="asset/Sepeda.jpg" alt=""></div>
+                    <p>Sepeda Rusak</p>
                 </div>
 
                 <!-- menu 2 -->
-                <div class="menuproduk">
+                <div class="menuproduk" onclick="detail()">
 
-                    <img src="asset/phone.jpg" alt="">
-                    <p>Sepatu</p>
+                    <div class="menuproduk-img-container"><img src="asset/Kulkas.jpg" alt=""></div>
+                    <p>Kulkas Rusak</p>
                 </div>
 
                 <!-- menu 3 -->
-                <div class="menuproduk">
+                <div class="menuproduk" onclick="detail()">
 
-                    <img src="asset/phone.jpg" alt="">
-                    <p>Sepatu</p>
+                    <div class="menuproduk-img-container"><img src="asset/mesin cuci.jpg" alt=""></div>
+                    <p>Mesin Cuci</p>
                 </div>
 
                 <!-- menu 4 -->
-                <div class="menuproduk">
-                    <img src="asset/phone.jpg" alt="">
-                    <p>Sepatu</p>
+                <div class="menuproduk" onclick="detail()">
+                    <div class="menuproduk-img-container"><img src="asset/tv.jpg" alt=""></div>
+                    <p>TV Rusak</p>
                 </div>
 
                 <!-- menu 5 -->
-                <div class="menuproduk">
+                <div class="menuproduk" onclick="detail()">
 
-                    <img src="asset/phone.jpg" alt="">
-                    <p>Sepatu</p>
+                    <div class="menuproduk-img-container"><img src="asset/Botol Sampah.jpg" alt=""></div>
+                    <p>Botol Plastik</p>
                 </div>
 
             </div>
@@ -187,185 +191,185 @@
             <p class="title">Populer</p>
             <div class="containers-article">
 
-                <div class="child-article">
-                    <div class="thumbnail-wrapper">
-                        <img src="asset/sepatu.png" alt="">
-                    </div>
-                    <div class="content-article">
-                        <div class="category">
-                            <h2 class="post-title">Sepatu</h2>
+                    <div class="child-article" onclick="detail()">
+                        <div class="thumbnail-wrapper">
+                            <img src="asset/Tembaga.jpg" alt="">
                         </div>
-                        <div class="author">
-                            <h1 class="name">RP 95.000</h1>
+                        <div class="content-article">
+                            <div class="category">
+                                <h2 class="post-title">Tembaga</h2>
+                            </div>
+                            <div class="author">
+                                <h1 class="name">RP 95.000/kg</h1>
+                            </div>
                         </div>
                     </div>
+
+                    <div class="child-article" onclick="detail()">
+                        <div class="thumbnail-wrapper">
+                            <img src="asset/Seng.jpg" alt="">
+                        </div>
+                        <div class="content-article">
+                            <div class="category">
+                                <h2 class="post-title">Seng (Zinc)</h2>
+                            </div>
+                            <div class="author">
+                                <h1 class="name">RP 95.000/kg</h1>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="child-article" onclick="detail()">
+                        <div class="thumbnail-wrapper">
+                            <img src="asset/Botol Sampah.jpg" alt="">
+                        </div>
+                        <div class="content-article">
+                            <div class="category">
+                                <h2 class="post-title">Botol Plastik</h2>
+                            </div>
+                            <div class="author">
+                                <h1 class="name">RP 95.000/kg</h1>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="child-article" onclick="detail()">
+                        <div class="thumbnail-wrapper">
+                            <img src="asset/Kardus.jpg" alt="">
+                        </div>
+                        <div class="content-article">
+                            <div class="category">
+                                <h2 class="post-title">Kardus</h2>
+                            </div>
+                            <div class="author">
+                                <h1 class="name">RP 45.000/kg</h1>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="child-article" onclick="detail()">
+                        <div class="thumbnail-wrapper">
+                            <img src="asset/kertas-hvs.jpg" alt="">
+                        </div>
+                        <div class="content-article">
+                            <div class="category">
+                                <h2 class="post-title">Kertas HVS</h2>
+                            </div>
+                            <div class="author">
+                                <h1 class="name">RP 25.000/kg</h1>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="child-article" onclick="detail()">
+                        <div class="thumbnail-wrapper">
+                            <img src="asset/koran.jpg" alt="">
+                        </div>
+                        <div class="content-article">
+                            <div class="category">
+                                <h2 class="post-title">Koran</h2>
+                            </div>
+                            <div class="author">
+                                <h1 class="name">RP 15.000/kg</h1>
+                            </div>
+                        </div>
+                    </div> 
+
+                    
+                    <div class="child-article" onclick="detail()">
+                        <div class="thumbnail-wrapper">
+                            <img src="asset/timah.jpg" alt="">
+                        </div>
+                        <div class="content-article">
+                            <div class="category">
+                                <h2 class="post-title">Timah</h2>
+                            </div>
+                            <div class="author">
+                                <h1 class="name">RP 95.000/kg</h1>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="child-article" onclick="detail()"> 
+                        <div class="thumbnail-wrapper">
+                            <img src="asset/Ember.jpg" alt="">
+                        </div>
+                        <div class="content-article">
+                            <div class="category">
+                                <h2 class="post-title">Ember</h2>
+                            </div>
+                            <div class="author">
+                                <h1 class="name">RP 5.000/kg</h1>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="child-article" onclick="detail()">
+                        <div class="thumbnail-wrapper">
+                            <img src="asset/besitua.jpeg" alt="">
+                        </div>
+                        <div class="content-article">
+                            <div class="category">
+                                <h2 class="post-title">Besi</h2>
+                            </div>
+                            <div class="author">
+                                <h1 class="name">RP 95.000/kg</h1>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="child-article" onclick="detail()">
+                        <div class="thumbnail-wrapper">
+                            <img src="asset/nium.jpg" alt="">
+                        </div>
+                        <div class="content-article">
+                            <div class="category">
+                                <h2 class="post-title">Kabel Alumunium</h2>
+                            </div>
+                            <div class="author">
+                                <h1 class="name">RP 95.000/kg</h1>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="child-article" onclick="detail()">
+                        <div class="thumbnail-wrapper">
+                            <img src="asset/paralon.jpg" alt="">
+                        </div>
+                        <div class="content-article">
+                            <div class="category">
+                                <h2 class="post-title">Paralon</h2>
+                            </div>
+                            <div class="author">
+                                <h1 class="name">RP 95.000/kg</h1>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="child-article" onclick="detail()">
+                        <div class="thumbnail-wrapper">
+                            <img src="asset/Pompa Air.jpg" alt="">
+                        </div>
+                        <div class="content-article">
+                            <div class="category">
+                                <h2 class="post-title">Pompa Air</h2>
+                            </div>
+                            <div class="author">
+                                <h1 class="name">RP 80.000/unit</h1>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
-
-                <div class="child-article">
-                    <div class="thumbnail-wrapper">
-                        <img src="asset/Makanan.png" alt="">
-                    </div>
-                    <div class="content-article">
-                        <div class="category">
-                            <h2 class="post-title">Sepatu</h2>
-                        </div>
-                        <div class="author">
-                            <h1 class="name">RP 95.000</h1>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="child-article">
-                    <div class="thumbnail-wrapper">
-                        <img src="asset/sepatu.png" alt="">
-                    </div>
-                    <div class="content-article">
-                        <div class="category">
-                            <h2 class="post-title">Sepatu</h2>
-                        </div>
-                        <div class="author">
-                            <h1 class="name">RP 95.000</h1>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="child-article">
-                    <div class="thumbnail-wrapper">
-                        <img src="asset/sepatu.png" alt="">
-                    </div>
-                    <div class="content-article">
-                        <div class="category">
-                            <h2 class="post-title">Sepatu</h2>
-                        </div>
-                        <div class="author">
-                            <h1 class="name">RP 95.000</h1>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="child-article">
-                    <div class="thumbnail-wrapper">
-                        <img src="asset/sepatu.png" alt="">
-                    </div>
-                    <div class="content-article">
-                        <div class="category">
-                            <h2 class="post-title">Sepatu</h2>
-                        </div>
-                        <div class="author">
-                            <h1 class="name">RP 95.000</h1>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="child-article">
-                    <div class="thumbnail-wrapper">
-                        <img src="asset/sepatu.png" alt="">
-                    </div>
-                    <div class="content-article">
-                        <div class="category">
-                            <h2 class="post-title">Sepatu</h2>
-                        </div>
-                        <div class="author">
-                            <h1 class="name">RP 95.000</h1>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="child-article">
-                    <div class="thumbnail-wrapper">
-                        <img src="asset/sepatu.png" alt="">
-                    </div>
-                    <div class="content-article">
-                        <div class="category">
-                            <h2 class="post-title">Sepatu</h2>
-                        </div>
-                        <div class="author">
-                            <h1 class="name">RP 95.000</h1>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="child-article">
-                    <div class="thumbnail-wrapper">
-                        <img src="asset/sepatu.png" alt="">
-                    </div>
-                    <div class="content-article">
-                        <div class="category">
-                            <h2 class="post-title">Sepatu</h2>
-                        </div>
-                        <div class="author">
-                            <h1 class="name">RP 95.000</h1>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="child-article">
-                    <div class="thumbnail-wrapper">
-                        <img src="asset/sepatu.png" alt="">
-                    </div>
-                    <div class="content-article">
-                        <div class="category">
-                            <h2 class="post-title">Sepatu</h2>
-                        </div>
-                        <div class="author">
-                            <h1 class="name">RP 95.000</h1>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="child-article">
-                    <div class="thumbnail-wrapper">
-                        <img src="asset/sepatu.png" alt="">
-                    </div>
-                    <div class="content-article">
-                        <div class="category">
-                            <h2 class="post-title">Sepatu</h2>
-                        </div>
-                        <div class="author">
-                            <h1 class="name">RP 95.000</h1>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="child-article">
-                    <div class="thumbnail-wrapper">
-                        <img src="asset/sepatu.png" alt="">
-                    </div>
-                    <div class="content-article">
-                        <div class="category">
-                            <h2 class="post-title">Sepatu</h2>
-                        </div>
-                        <div class="author">
-                            <h1 class="name">RP 95.000</h1>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="child-article">
-                    <div class="thumbnail-wrapper">
-                        <img src="asset/sepatu.png" alt="">
-                    </div>
-                    <div class="content-article">
-                        <div class="category">
-                            <h2 class="post-title">Sepatu</h2>
-                        </div>
-                        <div class="author">
-                            <h1 class="name">RP 95.000</h1>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
         </div>
     </div>
 
-
+    
     <div class="wrapper footer">
         <div class="sub-wrapper">
             <div class="footer-group2">

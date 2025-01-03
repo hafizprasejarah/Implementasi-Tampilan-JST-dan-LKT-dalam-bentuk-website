@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Produk</title>
+
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- link untuk css -->
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/keranjang.css">
+    <link rel="stylesheet" href="style/detail_produk.css">
+
+    <!-- link untuk javascript -->
+    <Script src="script/detailproduk.js" defer></Script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-title loged">
+            <h3>
+                <a href="HalamanUtama.html">Rongsok Jaya</a>
+            </h3>
+        </div>
+
+        <form action="" class="search-form loged">
+            <input type="text" name="" class="search-bar" id="search-input" placeholder="Search in here">
+            <span class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+
+            <div class="search-menu">
+                <ul>
+                    <li>
+                        <div class="search-menu-produk">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <a href="daftarproduk.html">
+                                <p>Tembaga...</p>
+                            </a>
+                            <div id="hapus-search-ikon" class="fa-solid fa-x"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="search-menu-produk">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <a href="daftarproduk.html">
+                                <p>Besi...</p>
+                            </a>
+                            <div id="hapus-search-ikon" class="fa-solid fa-x"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="search-menu-produk">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <a href="daftarproduk.html">
+                                <p>Timah...</p>
+                            </a>
+                            <div id="hapus-search-ikon" class="fa-solid fa-x"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </form>
+
+        <div class="keranjang">
+            <a href="Keranjang.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+        <div class="profile">
+            <a href="profile.html"><i class="fa-solid fa-user"></i></a>
+        </div>
+    </div>
+
+    <div class="wrapper keranjang">
+        <div class="sub-wrapper">
+            <div class="container-detailproduk">
+                <div class="back" onclick="goBack()"><i class="fa-solid fa-arrow-left"></i></div>
+                <div class="detailproduk-container">
+                    <div class="detail-produk-image-wrapper">
+                        <img src="asset/Tembaga.jpg" alt="">
+                    </div>
+                    <div class="detailproduk-identity">
+                        <h3>Tembaga</h3>
+                        <div class="rating">
+                            <input type="radio" id="star5" name="rating" value="5">
+                            <label for="star5">&#9733;</label>
+                            <input type="radio" id="star4" name="rating" value="4">
+                            <label for="star4">&#9733;</label>
+                            <input type="radio" id="star3" name="rating" value="3">
+                            <label for="star3">&#9733;</label>
+                            <input type="radio" id="star2" name="rating" value="2">
+                            <label for="star2">&#9733;</label>
+                            <input type="radio" id="star1" name="rating" value="1">
+                            <label for="star1">&#9733;</label>
+                        </div>
+                        <h3>Rp 95.000/kg</h3>
+                        <p>Terjual 10</p>
+                        <div class="seller-identity">
+                            <div class="detailproduk-image-wrapper-2">
+                                <img src="asset/profil.jpeg" alt="">
+                            </div>
+                            <p>Satriya Nova Nanda</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="deskripsi-container">
+                    <div class="deskripsi">
+                        <h3>Deskripsi Produk</h3>
+                        <div class="deskripsi-content">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta cum repudiandae molestias
+                            sint necessitatibus quaerat pariatur, quo illum iste, culpa quisquam esse quos nihil
+                            similique possimus dolorem dicta temporibus labore!, Lorem ipsum, dolor sit amet consectetur
+                            adipisicing elit. Quis quisquam ex ipsum corrupti vero iure distinctio qui dolorum ea.
+                            Labore non necessitatibus, sequi, molestiae fuga corporis obcaecati, suscipit repellat
+                            placeat tempora tenetur a at cupiditate. Assumenda modi corrupti unde quidem rem sit ipsam
+                            molestias id labore alias! Quos molestiae rem tempore blanditiis sapiente magni ea
+                            recusandae similique, illum, est voluptate repudiandae labore! Explicabo, voluptatem harum.
+                            Doloribus eaque dolorem incidunt ipsa vero? Quas, provident praesentium velit ratione ea
+                            laborum odit quisquam unde nisi nostrum. Nisi qui nemo, asperiores officiis autem cupiditate
+                            saepe quisquam voluptas ex, corrupti tenetur culpa voluptatem libero non.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta cum repudiandae molestias
+                            sint necessitatibus quaerat pariatur, quo illum iste, culpa quisquam esse quos nihil
+                            similique possimus dolorem dicta temporibus labore!, Lorem ipsum, dolor sit amet consectetur
+                            adipisicing elit. Quis quisquam ex ipsum corrupti vero iure distinctio qui dolorum ea.
+                            Labore non necessitatibus, sequi, molestiae fuga corporis obcaecati, suscipit repellat
+                            placeat tempora tenetur a at cupiditate. Assumenda modi corrupti unde quidem rem sit ipsam
+                            molestias id labore alias! Quos molestiae rem tempore blanditiis sapiente magni ea
+                            recusandae similique, illum, est voluptate repudiandae labore! Explicabo, voluptatem harum.
+                            Doloribus eaque dolorem incidunt ipsa vero? Quas, provident praesentium velit ratione ea
+                            laborum odit quisquam unde nisi nostrum. Nisi qui nemo, asperiores officiis autem cupiditate
+                            saepe quisquam voluptas ex, corrupti tenetur culpa voluptatem libero non.
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-group2">
+                   <button id="btn-login" class="btn masuk" onclick="keranjang()">keranjang</button>
+                    <button id="btn-register" class="btn signup" onclick="beli()">beli</button>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</body>
+
+</html>

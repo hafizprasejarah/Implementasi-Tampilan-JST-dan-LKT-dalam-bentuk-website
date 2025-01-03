@@ -1,0 +1,208 @@
+:root {
+    --selection: #5a95e375;
+    --hitam-legam: #000000;
+    --latar-belakang: #D9D9D9;
+    --hitam: #444;
+    --ungu: #A0B5FF;
+    --hijau-status: #2FBD68;
+    --merah-delete: #EA0016;
+    --kuning-validasi: #FFB23C;
+    --putih: #fff;
+    --biru-btn: #3563E9;
+    --biru-teks: #0022d6;
+    --opsi-biru-btn: #62c2f6;
+    --putih-bg: #f6f7f9;
+    --scroll: rgba(255, 255, 255, 0.808);
+    --kuning: #F4D160;
+    --orange: #f39c12;
+    --border: .1rem solid rgba(0, 0, 0, 0.432);
+    --bold-border: .2rem solid rgba(0, 0, 0, 0.432);
+    --box-shadow: 0 .5rem 1rem rgb(0, 0, 0, .1);
+    --border--putih: .1rem solid rgba(255, 255, 255, 0.432);
+
+}
+
+body {
+
+    background-color: #f6f7f9;
+}
+.back i{
+    z-index: 99;
+}
+.container-detailproduk {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    position: relative;
+}
+
+.detailproduk-container {
+    margin-left: 5rem;
+    display: flex;
+    width: 100%;
+    /* justify-content: center; */
+}
+
+.detail-produk-image-wrapper {
+    margin: 0 2rem;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    border: var(--bold-border);
+    box-shadow: var(--box-shadow);
+    border-radius: 10px;
+}
+
+.detail-produk-image-wrapper img {
+    width: 100%;
+    height: 100%;
+}
+
+.detailproduk-identity {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.detailproduk-identity h3 {
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    font-size: 4rem;
+    color: #ddd;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.rating input:checked~label,
+.rating input:hover~label,
+.rating label:hover~label {
+    color: #f39c12;
+}
+
+.rating input:checked~label:hover,
+.rating input:hover~label:hover,
+.rating input:checked~label:hover~label {
+    color: #e67e22;
+}
+
+.detailproduk-identity p {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin: 2rem 0;
+}
+
+.seller-identity {
+    display: flex;
+    align-items: center;
+}
+
+.detailproduk-image-wrapper-2 {
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 50px;
+}
+
+.detailproduk-image-wrapper-2 img {
+    width: 50px;
+    height: 50px;
+    object-position: center;
+    object-fit: cover;
+
+}
+
+.seller-identity p {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin: 0rem 1rem;
+}
+
+.deskripsi-container{
+    position: relative;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.deskripsi-container .deskripsi h3{
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+
+.deskripsi-container .deskripsi .deskripsi-content{
+    /* position: absolute; */
+    font-size: 1.4rem;
+    font-weight: bold;
+    background-color: var(--latar-belakang);
+    padding: 2rem;
+    width: 100%;
+    bottom: -20rem;
+    margin: 2rem;
+}
+
+.btn-group2{
+    margin: 2rem 0;
+
+}
+
+
+@media(max-width:768px) {
+    html {
+        font-size: 53%;
+
+    }
+
+    .detailproduk-container {
+        margin-left: 0;
+        margin-top: 5rem;
+        flex-direction: column;
+    }
+    
+    .detail-produk-image-wrapper {
+        align-self: center;
+        /* margin: 0 2rem; */
+        width: 100%;
+        /* height: 300px; */
+        object-fit: cover;
+        object-position: center;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        border: var(--bold-border);
+        box-shadow: var(--box-shadow);
+        border-radius: 10px;
+    }
+    
+    .detail-produk-image-wrapper img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .deskripsi-container .deskripsi .deskripsi-content{
+
+        margin: 0;
+        margin-top: 2rem;
+        margin-bottom:2rem ;
+    }
+
+    
+
+}

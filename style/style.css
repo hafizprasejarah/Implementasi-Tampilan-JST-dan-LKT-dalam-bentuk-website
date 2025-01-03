@@ -121,7 +121,8 @@ html {
 
 
 
-.keranjang i, .profile i {
+.keranjang i,
+.profile i {
     color: var(--hitam-legam);
     cursor: pointer;
     font-size: 28px;
@@ -194,7 +195,7 @@ html {
 
 
 
-.sub-wrapper{
+.sub-wrapper {
     max-width: 1200px;
     width: 100%;
 }
@@ -273,6 +274,23 @@ html {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+}
+
+.menuproduk .menuproduk-img-container {
+    width: 225px;
+    height: 255px;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.menuproduk .menuproduk-img-container img {
+    width: 225px;
+    height: 255px;
+    cursor: pointer;
+    object-position: center;
+    border-radius: 1rem;
+    overflow: hidden;
+    object-fit: cover;
 }
 
 .menuproduk p {
@@ -441,6 +459,7 @@ html {
     color: var(--hitam-legam);
     font-size: 1.4rem;
 }
+
 .search-menu ul .search-menu-produk p {
     font-size: 1.4rem;
 }
@@ -457,13 +476,14 @@ html {
     list-style: none;
     padding: 0;
     margin: 2rem;
-  }
+    justify-content: center;
+}
 
-  .pagination li {
+.pagination li {
     margin: 0 5px;
-  }
+}
 
-  .pagination a {
+.pagination a {
     display: inline-block;
     padding: 8px 12px;
     text-decoration: none;
@@ -471,22 +491,188 @@ html {
     border: var(--bold-border);
     border-radius: 4px;
     transition: background-color 0.3s, color 0.3s;
-  }
+}
 
-  .pagination a:hover {
+.pagination a:hover {
     background-color: var(--hitam-legam);
     color: var(--putih);
-  }
+}
 
-  .pagination .active a {
+.pagination .active a {
     background-color: var(--hitam-legam);
     color: var(--putih);
     border-color: var(--hitam-legam);
     cursor: default;
-  }
+}
 
-  .pagination .disabled a {
+.pagination .disabled a {
     /* color: var(--putih); */
     /* border-color: var(--bold-border); */
     cursor: not-allowed;
-  }
+}
+
+
+
+@media(max-width:991px) {
+    html {
+        font-size: 55%;
+
+    }
+
+    .wrapper-carousel i:last-child {}
+
+    .header {
+        padding: 2rem 2rem;
+        position: relative;
+    }
+
+    .header-title h3 {
+        font-size: 1rem;
+    }
+
+    .search-bar {
+        width: 100%;
+        height: 43px;
+    }
+
+    .search-icon {
+        height: 43px;
+    }
+
+    .btn-group {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--putih);
+        padding: 1rem 0;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -30%;
+    }
+
+    .btn {
+        font-size: 1.2rem;
+        border-radius: 10rem;
+        margin: 0rem .5rem;
+        padding: .5rem 2rem;
+
+    }
+
+
+
+    .containers-article {
+
+        grid-template-columns: repeat(3, 1fr);
+        padding: 0;
+
+    }
+}
+
+
+@media(max-width:768px) {
+    html {
+        font-size: 53%;
+
+    }
+
+    .header {
+        padding: 1.5rem 1.5rem;
+    }
+
+    .btn-group {
+        bottom: -50%;
+    }
+
+    .profile {
+        font-size: 18px;
+        right: 0;
+    }
+
+    .keranjang i,
+    .profile i {
+        font-size: 18px;
+    }
+
+    .containers-article {
+
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+
+
+
+
+}
+
+
+@media(max-width:450px) {
+    html {
+        font-size: 50%;
+
+    }
+
+    .header {
+        padding: 1rem 1rem;
+    }
+
+    .search-form {
+        margin: 1rem;
+    }
+
+    .search-bar {
+        width: 100%;
+        height: 23px;
+        font-size: 1rem;
+    }
+
+    .search-icon {
+        height: 23px;
+    }
+
+    .search-icon i {
+        font-size: 1rem;
+
+    }
+
+    .btn-group {
+        bottom: -55%;
+    }
+
+    .btn {
+        font-size: 1rem;
+        border-radius: 10rem;
+        margin: 0rem .5rem;
+        padding: .3rem 1rem;
+
+    }
+
+    .profile {
+        font-size: 14px;
+        right: 0;
+    }
+
+    .keranjang i,
+    .profile i {
+        font-size: 14px;
+        margin-right: 1rem;
+    }
+
+    /* header */
+    .containers-article {
+
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .container-footer {
+        flex-direction: column;
+    }
+
+    .child-footer {
+        margin-top: 1rem;
+    }
+
+
+}

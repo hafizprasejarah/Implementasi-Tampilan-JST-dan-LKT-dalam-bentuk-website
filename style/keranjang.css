@@ -18,7 +18,9 @@ body {
     justify-content: center;
     background: var(--putih-bg);
 }
+
 .container-keranjang {
+    flex-direction: column;
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -28,8 +30,9 @@ body {
 .back i {
     position: absolute;
     color: #000;
-    z-index: 999;
+    z-index: 99;
     font-size: 2.8rem;
+    top: 0;
 }
 
 .back:hover i {
@@ -40,8 +43,14 @@ body {
 .daftar-keranjang {
     padding: .5rem 5rem;
     width: 100%;
-    display: flex;
+    display: none;
     flex-direction: column;
+}
+
+
+.daftar-keranjang.active {
+    display: flex;
+
 }
 
 .daftar-keranjang .judul {
@@ -70,6 +79,7 @@ body {
     justify-content: space-between;
     margin: 1rem 0;
 }
+
 
 .daftar-keranjang .pilih-semua form {
     display: flex;
@@ -142,6 +152,40 @@ btncounter:hover:not(:disabled) {
     height: 18px;
 }
 
+
+.tgl-pembayaran-status {
+    box-shadow: var(--box-shadow);
+    background-color: var(--latar-belakang);
+    align-items: center;
+    padding: 0.5rem 1rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+}
+
+
+.tgl-pembayaran-status p{
+    font-weight: bold;
+}
+.tgl-pembayaran {
+    display: flex;
+    align-items: center;
+}
+
+.tgl-pembayaran p {
+    font-weight: bold;
+}
+
+.tgl-pembayaran i {
+    font-size: 2.4rem;
+    margin: 0 1rem;
+    font-weight: bold;
+}
+
+
 .gambar-container {
     margin: .5rem 0;
     padding: 0.5rem 0;
@@ -176,9 +220,60 @@ btncounter:hover:not(:disabled) {
     width: 25%;
 }
 
+.nama-harga .harga-produk,
+.nama-harga .namaproduk {
+    width: 100%;
+    margin: 1rem;
+    text-align: start;
+}
+
+.nama-harga {
+    width: 100%;
+    margin: 0 1rem;
+}
+
 .jumlah-produk {
     display: flex;
     justify-content: flex-end;
+}
+
+.navbar-list {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+ul {
+    width: 100%;
+}
+
+ul .list {
+    text-align: center;
+    width: 100%;
+    list-style: none;
+    padding: 1rem;
+    cursor: pointer;
+    margin: 0 5rem;
+    border-radius: 20rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    background-color: var(--latar-belakang);
+    /* align-items: center; */
+}
+
+ul .list i {
+
+    font-size: 1.4rem;
+
+}
+
+ul .list:hover {
+    background-color: var(--kuning);
+}
+
+ul .list.active {
+    background-color: var(--kuning);
 }
 
 .jumlah-produk i {
@@ -191,22 +286,82 @@ btncounter:hover:not(:disabled) {
     margin: 4rem 0 1rem 0;
 }
 
-@media(max-width:650px) {
+@media(max-width:980px) {
     html {
         font-size: 50%;
 
     }
+
+    .wrapper.keranjang {
+        padding: 5% 2rem 0 2rem;
+    }
+
+    ul .list {
+        margin: 2rem;
+    }
+
+
+
+
+
+}
+
+@media(max-width:650px) {
+    * {
+        font-size: 90%;
+
+    }
+
     .daftar-keranjang {
         padding: 5rem .5rem;
     }
-    
 
-    .count-display{
+    .navbar-list {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    ul .list {
+        margin: 0 .5rem;
+        padding: .5rem;
+        width: 100%;
+        font-size: .9rem;
+        font-weight: bold;
+        /* align-items: center; */
+    }
+
+    ul .list i {
+        font-size: .9rem;
+        display: none;
+
+    }
+
+    .back i {
+        top: auto;
+    }
+
+    .count-display {
         font-size: 1.4rem;
     }
-    .jumlah-produk i{
+
+    .jumlah-produk i {
         font-size: 2rem;
     }
+
+    .tgl-pembayaran i{
+        font-size: 2rem;
+    }
+    .tgl-pembayaran-status p {
+        font-size: 1rem;
+    }
+
+    .tgl-pembayaran-status{
+        padding: 0.5rem 0;
+    }
     
+
 
 }

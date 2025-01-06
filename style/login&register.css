@@ -107,34 +107,34 @@ body {
 
 
 #see.active {
-    color: #a19e9e;
+    color: #f39c12;
 
 }
 
 #see:hover {
-    color: #D9D9D9;
+    color: #f39c12;
     transform: scale(.95);
 }
 
 #seeRegister.active {
 
-    color: #a19e9e;
+    color: #f39c12;
 
 }
 
 #seeRegister:hover {
-    color: #D9D9D9;
+    color: #f39c12;
     transform: scale(.95);
 }
 
 #seeverify.active {
 
-    color: #a19e9e;
+    color: #f39c12;
 
 }
 
 #seeverify:hover {
-    color: #D9D9D9;
+    color: #f39c12;
     transform: scale(.95);
 }
 
@@ -152,7 +152,7 @@ body {
 
     .box-input {
         min-width: 150px;
-        font-size: .9rem;
+        font-size: 1rem;
     }
 
 

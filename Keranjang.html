@@ -76,8 +76,19 @@
     <div class="wrapper keranjang">
         <div class="sub-wrapper">
             <div class="container-keranjang">
+                <div class="navbar-profile">
+                    <nav>
+                        <ul class="navbar-list">
+                            <li class="list i active">Dipesan <i class="fa-solid fa-chevron-down"></i></li>
+                            <li class="list ii">Menunggu <i class="fa-solid fa-chevron-down"></i></li>
+                            <li class="list iii">Diproses <i class="fa-solid fa-chevron-down"></i></li>
+                            <li class="list iv">Dikirim <i class="fa-solid fa-chevron-down"></i></li>
+                            <li class="list v">Selesai <i class="fa-solid fa-chevron-down"></i></li>
+                        </ul>
+                    </nav>
+                </div>
                 <div class="back" onclick="goBack()"><i class="fa-solid fa-arrow-left"></i></div>
-                <div class="daftar-keranjang">
+                <div class="daftar-keranjang pertama active">
                     <div class="judul">
                         <h3>Keranjang</h3>
                         <h3>Detail Pesanan</h3>
@@ -133,6 +144,122 @@
 
                     </div>
                 </div>
+
+
+                <div class="daftar-keranjang kedua">
+                    <div class="tgl-pembayaran-status">
+                        <div class="tgl-pembayaran">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                            <p>Tanggal belanja 04 Januari 2024, 16:42 WIB</p>
+                        </div>
+                        <p>Status: Menunggu Konfirmasi</p>
+
+                    </div>
+
+                    <div class="detail-keranjang-produk ">
+                        <p>Satriya Nova</p>
+
+                        <div class="gambar-container" onclick="detail()">
+                            <div class="wrapper-gambar"><img src="asset/Tembaga.jpg" alt=""></div>
+                            <div class="nama-harga">
+                                <p class="namaproduk">Tembaga 1kg.....</p>
+                                <p class="harga-produk">Rp 95.000</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="detail-keranjang-produk ">
+                        <button class="btn masuk" onclick="">Batalkan</button>
+                    </div>
+                </div>
+
+                <!-- tampilan 3 -->
+                <div class="daftar-keranjang ketiga">
+                    <div class="tgl-pembayaran-status">
+                        <div class="tgl-pembayaran">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                            <p>Tanggal belanja 04 Januari 2024, 16:42 WIB</p>
+                        </div>
+                        <p>Status: Diproses</p>
+
+                    </div>
+
+                    <div class="detail-keranjang-produk ">
+                        <p>Satriya Nova</p>
+
+                        <div class="gambar-container" onclick="detail()">
+                            <div class="wrapper-gambar"><img src="asset/Tembaga.jpg" alt=""></div>
+                            <div class="nama-harga">
+                                <p class="namaproduk">Tembaga 1kg.....</p>
+                                <p class="harga-produk">Rp 95.000</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- tampilan 3 -->
+
+
+                <!-- tampilan 4 -->
+                <div class="daftar-keranjang keempat">
+                    <div class="tgl-pembayaran-status">
+                        <div class="tgl-pembayaran">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                            <p>Tanggal belanja 04 Januari 2024, 16:42 WIB</p>
+                        </div>
+                        <p>Status: Dikirim</p>
+
+                    </div>
+
+                    <div class="detail-keranjang-produk ">
+                        <p>Satriya Nova</p>
+
+                        <div class="gambar-container" onclick="detail()">
+                            <div class="wrapper-gambar"><img src="asset/Tembaga.jpg" alt=""></div>
+                            <div class="nama-harga">
+                                <p class="namaproduk">Tembaga 1kg.....</p>
+                                <p class="harga-produk">Rp 95.000</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="detail-keranjang-produk ">
+                        <button class="btn masuk" onclick="">Lacak</button>
+                    </div>
+                </div>
+                <!-- tampilan 4 -->
+
+                <!-- tampilan 5 -->
+                <div class="daftar-keranjang kelima">
+                    <div class="tgl-pembayaran-status">
+                        <div class="tgl-pembayaran">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                            <p>Tanggal belanja 04 Januari 2024, 16:42 WIB</p>
+                        </div>
+                        <p>Status: Selesai</p>
+
+                    </div>
+
+                    <div class="detail-keranjang-produk ">
+                        <p>Satriya Nova</p>
+
+                        <div class="gambar-container" onclick="detail()">
+                            <div class="wrapper-gambar"><img src="asset/Tembaga.jpg" alt=""></div>
+                            <div class="nama-harga">
+                                <p class="namaproduk">Tembaga 1kg.....</p>
+                                <p class="harga-produk">Rp 95.000</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="detail-keranjang-produk ">
+                        <button class="btn masuk" onclick="detailpembayaran()">Detail Pembelian</button>
+                    </div>
+                </div>
+                <!-- tampilan 5 -->
             </div>
         </div>
 

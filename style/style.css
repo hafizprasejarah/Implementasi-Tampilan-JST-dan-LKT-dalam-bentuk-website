@@ -269,7 +269,7 @@ html {
 .menuproduk {
     cursor: pointer;
     box-shadow: var(--box-shadow);
-    margin: 0 1rem;
+    margin: 1rem 1rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

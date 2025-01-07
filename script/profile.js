@@ -22,6 +22,12 @@ if (menu1) {
     pembayaran.classList.remove('active');
     biodata.classList.add('active');
 
+    list1.classList.add('active');
+    list2.classList.remove('active');
+    list3.classList.remove('active');
+    list4.classList.remove('active');
+    list5.classList.remove('active');
+
   }
 
   const pembayaran = document.querySelector('.container.kedua');
@@ -32,6 +38,11 @@ if (menu1) {
     pembayaran.classList.add('active');
     biodata.classList.remove('active');
 
+    list1.classList.remove('active');
+    list2.classList.add('active');
+    list3.classList.remove('active');
+    list4.classList.remove('active');
+    list5.classList.remove('active');
   }
 
   const rekening = document.querySelector('.container.ketiga');
@@ -42,6 +53,11 @@ if (menu1) {
     pembayaran.classList.remove('active');
     biodata.classList.remove('active');
 
+    list1.classList.remove('active');
+    list2.classList.remove('active');
+    list3.classList.add('active');
+    list4.classList.remove('active');
+    list5.classList.remove('active');
   }
 
   const pengaturan = document.querySelector('.container.keempat');
@@ -52,6 +68,11 @@ if (menu1) {
     pembayaran.classList.remove('active');
     biodata.classList.remove('active');
 
+    list1.classList.remove('active');
+    list2.classList.remove('active');
+    list3.classList.remove('active');
+    list4.classList.add('active');
+    list5.classList.remove('active');
   }
   const keamanan = document.querySelector('.container.kelima');
   document.querySelector(".list.v").onclick = () => {
@@ -60,7 +81,21 @@ if (menu1) {
     rekening.classList.remove('active');
     pembayaran.classList.remove('active');
     biodata.classList.remove('active');
+
+    list1.classList.remove('active');
+    list2.classList.remove('active');
+    list3.classList.remove('active');
+    list4.classList.remove('active');
+    list5.classList.add('active');
   }
+
+
+  
+  const list1 = document.querySelector(".list.i");
+  const list2 = document.querySelector(".list.ii");
+  const list3 = document.querySelector(".list.iii");
+  const list4 = document.querySelector(".list.iv");
+  const list5 = document.querySelector(".list.v");
 
 
   let btnBiodata = biodata;
